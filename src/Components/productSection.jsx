@@ -4,17 +4,17 @@ const products = [
   {
     name: 'Air Purifier 3000',
     desc: 'Advanced filtration for clean air.',
-    img: '/img/product_1.png',
+    img: 'img/product_1.png',
   },
   {
     name: 'HVAC System X500',
     desc: 'Energy-efficient heating and cooling.',
-    img: '/img/product_2.png',
+    img: 'img/product_2.png',
   },
   {
     name: 'Air Filter Replacement',
     desc: 'Regular filter replacements for optimal performance.',
-    img: '/img/product_3.png',
+    img: 'img/product_3.png',
   },
 ];
 

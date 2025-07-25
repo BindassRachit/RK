@@ -4,22 +4,22 @@ const services = [
   {
     name: 'Air Quality Testing',
     desc: 'Professional testing for indoor air pollutants.',
-    img: '/img/service_1.png',
+    img: 'img/service_1.png',
   },
   {
     name: 'HVAC Maintenance',
     desc: 'Routine servicing for HVAC systems.',
-    img: '/img/service_2.png',
+    img: 'img/service_2.png',
   },
   {
     name: 'Filter Replacement',
     desc: 'Timely air filter replacement services.',
-    img: '/img/service_3.png',
+    img: 'img/service_3.png',
   },
   {
     name: 'Duct Cleaning',
     desc: 'Deep cleaning for ventilation systems.',
-    img: '/img/service_4.png', // Make sure you have this image
+    img: 'img/service_4.png', // Make sure you have this image
   },
 ];
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const images = [
-  '/img/slider-1.jpg',
+  'img/slider-1.jpg',
 ];
 
 const Main = () => {
