@@ -8,16 +8,16 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8 border-b border-gray-300 pb-10">
         {/* Column 1 */}
         <div>
-          <h4 className="font-bold text-orange-400 mb-4">Kanchipuram Sarees</h4>
+          <h4 className="font-bold text-orange-400 mb-4">Air System Product</h4>
           <ul className="space-y-2 text-sm">
-            <li>Wedding Collection</li>
-            <li>Sarees</li>
-            <li>Readymades</li>
-            <li>Athirstham</li>
-            <li>Decor & Accessories</li>
-            <li>Virtual Shopping</li>
-            <li>E-Gift Card</li>
-            <li>Save & Buy Scheme</li>
+            <li>Aluminum Ceiling Diffuser</li>
+            <li>Aluminum Slot Diffuser</li>
+            <li>Round Aluminum Air Diffuser</li>
+            <li>Aluminum 2 Slot Air Linear Diffuser</li>
+            <li>300x150 Mm AC Aluminium Grill</li>
+            <li>600x150 Mm AC Aluminum Grill</li>
+            <li>Volume Control Damper</li>
+            <li>Al Volume Control Duct Damper</li>
           </ul>
         </div>
 
