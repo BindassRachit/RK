@@ -32,13 +32,13 @@ const products = [
     description: "Forced Draft Fan (FD Fan) supplies pressurized air to steam boiler assemblies...",
       Paragraph: [
       {
-        text: "DIDW Centrifugal Fans are fans that are double the width of a conventional fan, designed to handle high volumes of air with low pressure. They are ideal for applications requiring high airflow and moderate pressure, such as in HVAC systems, industrial ventilation, and dust collection systems."
+        text: "Forced Draft Fan ( Full form of FD Fan) is a type of a fan supplying pressurized air to a system. In the case of a Steam Boiler Assembly, this FD fan is of a great importance. FD fan supplies air to the Air-preheater, where it captures the heat from the flue gases coming from the Boiler Outlet."
       },
       {
-        text: "These fans are characterized by their robust construction, high efficiency, and ability to operate in various environments. They are commonly used in industries such as manufacturing, mining, and power generation, where reliable air movement is crucial."
+        text: "Nowadays, fluidized bed combustion is one of the promising ways of collecting more energy through combustion for solid fuels. But this wouldn’t have even been so famous if there wasn’t any Forced Draft Fan. Whether it is Bubbling or Circulating fluidized bed combustion incorporated Boiler. This phenomenon of fluidization is achieved through a Forced Draft Fan only."
       },
       {
-        text: "DIDW Centrifugal Fans are available in various sizes and configurations to meet specific application requirements. They can be customized with different impeller designs, materials, and drive options to optimize performance for specific tasks."
+        text: "Let us consider Bubbling Fluidized Combustion, Proper designing of the Fan as per the weight of the sand placed on the bed is very essential. The pressurized air supplied by the Fan helps in providing enough draft equalizing the weight of the bed and the quantity to be supplied, hence creating fluidization of the sand in the furnace."
       }
     ],
     points: [
