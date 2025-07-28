@@ -4,7 +4,7 @@ const images = [
   'img/slider-1.jpg',
 ];
 
-const Main = () => {
+const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
   const touchStartX = useRef(0);
@@ -76,4 +76,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default HeroSection;
