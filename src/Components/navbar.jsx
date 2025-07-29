@@ -16,7 +16,7 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <Link to="/">
-              <img src="img/logo3.png" alt="Logo" className="h-10" />
+              <img src={`${import.meta.env.BASE_URL}img/logo3.png`} alt="Logo" className="h-10" />
             </Link>
           </div>
 
