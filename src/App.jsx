@@ -11,6 +11,8 @@ import LocationMap from './Components/contact';
 import AllProducts from './Components/allProducts';
 import Footer from './Components/footor';
 import ProductDetail from './Components/productdetail'; // make sure spelling is correct
+import About from './Components/about';
+import ContactPage from './Components/contactUs';
 
 // Home page layout inside function
 const HomePage = () => {
@@ -34,6 +36,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<AllProducts />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </Router>

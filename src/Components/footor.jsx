@@ -46,7 +46,7 @@ const Footer = () => {
 
         {/* Column 4 */}
         <div className="text-center md:text-left">
-          <img src="img/logo3.png" alt="Logo" className="mx-auto md:mx-0 mb-3 w-12" />
+          <img src={`${import.meta.env.BASE_URL}img/logo3.png`} alt="Logo" className="mx-auto md:mx-0 mb-3 w-12" />
           <p className="text-sm">rkairsystem081@gmail.com</p>
           <p className="text-sm mb-2">+91 97171 47883</p>
           <p className="text-sm mb-2">Get inspired – follow us!</p>
