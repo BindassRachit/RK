@@ -26,7 +26,6 @@ const Footer = () => {
           <h4 className="font-bold text-orange-400 mb-4">Quick links</h4>
           <ul className="space-y-2 text-sm">
             <li>Shipping & Delivery Policy</li>
-            <li>Return & Exchange Policy</li>
             <li>Terms & Conditions</li>
             <li>Privacy policy</li>
             <li>Contact us</li>
