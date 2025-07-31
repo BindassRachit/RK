@@ -49,11 +49,13 @@ const Footer = () => {
           <p className="text-sm">rkairsystem081@gmail.com</p>
           <p className="text-sm mb-2">+91 97171 47883</p>
           <p className="text-sm mb-2">Get inspired – follow us!</p>
-          <div className="flex justify-center md:justify-start gap-4 text-orange-400 text-lg">
+          <div className="flex justify-center md:justify-start gap-4 pb-4 text-orange-400 text-lg">
             <FaInstagram />
             <FaFacebookF />
             <FaYoutube />
           </div>
+          <p className="text-sm">Website Created by Webnics</p>
+          <p className="text-sm mb-2">webnics09@gmail.com</p>
         </div>
       </div>
 

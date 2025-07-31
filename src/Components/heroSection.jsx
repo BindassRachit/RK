@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
   "img/slider-4.jpg",
-  "img/slider-1.jpg",
   "img/slider-3.jpg",
 ];
 
@@ -12,11 +13,10 @@ const HeroSection = () => {
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
-  // Auto change image every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       goToNext();
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -29,7 +29,6 @@ const HeroSection = () => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  // Swipe handlers
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -40,8 +39,8 @@ const HeroSection = () => {
 
   const handleTouchEnd = () => {
     const deltaX = touchStartX.current - touchEndX.current;
-    if (deltaX > 50) goToNext(); // swipe left
-    else if (deltaX < -50) goToPrev(); // swipe right
+    if (deltaX > 50) goToNext();
+    else if (deltaX < -50) goToPrev();
   };
 
   return (
@@ -52,27 +51,48 @@ const HeroSection = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Image */}
-      <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex}`}
-        className="w-full h-full object-cover transition duration-700 ease-in-out"
-      />
+      <div className="relative w-full h-full">
+        <img
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex}`}
+          className="w-full h-full object-cover transition duration-700 ease-in-out"
+        />
 
-      {/* Left Button (hidden on small screens) */}
+        {/* Typing Text with White Background */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white  backdrop-blur-sm px-4">
+          <TypeAnimation
+            sequence={[
+              'Welcome to Our Site',
+              1000,
+              '',
+              'Discover the best deals',
+              1000,
+              '',
+              'Shop Latest Products',
+              1000,
+              ''
+            ]}
+            wrapper="h1"
+            cursor={true}
+            repeat={Infinity}
+            className="text-3xl md:text-5xl font-bold mb-4 text-white"
+          />
+          <p className="text-lg md:text-2xl mb-6 text-black">Your shopping journey starts here</p>
+        </div>
+      </div>
+
+      {/* Font Awesome Styled Navigation Buttons */}
       <button
         onClick={goToPrev}
-        className="hidden md:block absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/40 text-white px-3 py-1 rounded-full hover:bg-black/60"
+        className="hidden md:flex items-center justify-center absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black p-3 rounded-full shadow-lg hover:bg-gray-200 transition"
       >
-        ◀
+        <FaChevronLeft size={20} />
       </button>
-
-      {/* Right Button (hidden on small screens) */}
       <button
         onClick={goToNext}
-        className="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/40 text-white px-3 py-1 rounded-full hover:bg-black/60"
+        className="hidden md:flex items-center justify-center absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black p-3 rounded-full shadow-lg hover:bg-gray-200 transition"
       >
-        ▶
+        <FaChevronRight size={20} />
       </button>
     </div>
   );

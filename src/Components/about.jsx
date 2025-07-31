@@ -1,7 +1,23 @@
-// About.jsx
 import React from "react";
 import Footer from "./footor";
 import Navbar from "./navbar";
+import { motion } from "framer-motion";
+
+// Variants for animations
+const leftImageVariants = {
+  hidden: { x: -100, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+};
+
+const rightImageVariants = {
+  hidden: { x: 100, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+};
+
+const iconVariants = {
+  hidden: { scale: 0.5, opacity: 0 },
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.8 } },
+};
 
 const About = () => {
   return (
@@ -30,13 +46,19 @@ const About = () => {
           </p>
         </div>
 
-        {/* ===== Highlights Section (added right after the paragraph) ===== */}
+        {/* ===== Highlights Section ===== */}
         <div className="max-w-6xl mx-auto px-6 pb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
             <article className="group rounded-2xl bg-white p-8 text-center shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-md">
-              <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-orange-200 text-orange-600">
-                {/* Graduation cap icon */}
+              <motion.div
+                variants={iconVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-orange-200 text-orange-600"
+              >
+                {/* Icon */}
                 <svg viewBox="0 0 24 24" className="h-16 w-16">
                   <path
                     d="M3 8l9-4 9 4-9 4-9-4zm2 4v4.5a2.5 2.5 0 005 0V12"
@@ -54,10 +76,8 @@ const About = () => {
                     strokeLinecap="round"
                   />
                 </svg>
-              </div>
-              <h3 className="mb-2 text-xl font-semibold ">
-                Quality Manufacturing
-              </h3>
+              </motion.div>
+              <h3 className="mb-2 text-xl font-semibold ">Quality Manufacturing</h3>
               <p className="text-sm leading-relaxed text-gray-600">
                 High‑performance fans and air‑pollution systems with strict QA
                 and durable builds.
@@ -66,8 +86,13 @@ const About = () => {
 
             {/* Card 2 */}
             <article className="group rounded-2xl bg-white p-8 text-center shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-md">
-              <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-orange-200 text-orange-600">
-                {/* Lightbulb icon */}
+              <motion.div
+                variants={iconVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-orange-200 text-orange-600"
+              >
                 <svg viewBox="0 0 24 24" className="h-16 w-16">
                   <path
                     d="M8 10a4 4 0 018 0c0 2.5-2 3.5-2 5H10c0-1.5-2-2.5-2-5z"
@@ -86,20 +111,22 @@ const About = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </div>
-              <h3 className="mb-2 text-xl font-semibold ">
-                R&D & Custom Solutions
-              </h3>
+              </motion.div>
+              <h3 className="mb-2 text-xl font-semibold ">R&D & Custom Solutions</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                Application‑specific design for airflow, dust collection, and
-                energy‑efficient systems.
+                Application‑specific design for airflow, dust collection, and energy‑efficient systems.
               </p>
             </article>
 
             {/* Card 3 */}
             <article className="group rounded-2xl bg-white p-8 text-center shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-md">
-              <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-orange-200 text-orange-600">
-                {/* Book / Support icon */}
+              <motion.div
+                variants={iconVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-orange-200 text-orange-600"
+              >
                 <svg viewBox="0 0 24 24" className="h-16 w-16">
                   <path
                     d="M4 5.5A2.5 2.5 0 016.5 3H20v16.5A1.5 1.5 0 0118.5 21H6.5A2.5 2.5 0 014 18.5V5.5z"
@@ -115,13 +142,10 @@ const About = () => {
                     strokeLinecap="round"
                   />
                 </svg>
-              </div>
-              <h3 className="mb-2 text-xl font-semibold ">
-                On‑Time Delivery & Support
-              </h3>
+              </motion.div>
+              <h3 className="mb-2 text-xl font-semibold ">On‑Time Delivery & Support</h3>
               <p className="text-sm leading-relaxed text-gray-600">
-                Pan‑India installation, AMC, and quick service response for
-                minimum downtime.
+                Pan‑India installation, AMC, and quick service response for minimum downtime.
               </p>
             </article>
           </div>
@@ -130,7 +154,11 @@ const About = () => {
 
         {/* Left Image - Right Text */}
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 px-6 pb-12">
-          <img
+          <motion.img
+            variants={leftImageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
             src={`${import.meta.env.BASE_URL}img/Our Vision.png`}
             alt="Manufacturing"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
@@ -141,17 +169,21 @@ const About = () => {
             </h2>
             <p className="text-base leading-relaxed text-justify">
               We have built a strong reputation in the market by manufacturing &
-              supplying top grade products known for their unmatched
-              performance, sturdy design, high strength, and long service life.
-              Our skilled team and state-of-the-art manufacturing unit ensure
-              flawless and efficient production.
+              supplying top grade products known for their unmatched performance,
+              sturdy design, high strength, and long service life. Our skilled team
+              and state-of-the-art manufacturing unit ensure flawless and efficient
+              production.
             </p>
           </div>
         </div>
 
         {/* Right Image - Left Text */}
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-6 px-6 pb-12">
-          <img
+          <motion.img
+            variants={rightImageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
             src={`${import.meta.env.BASE_URL}img/Our Aim.png`}
             alt="Clients"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"

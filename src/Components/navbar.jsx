@@ -16,12 +16,12 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <Link to="/">
-              <img src={`${import.meta.env.BASE_URL}img/logo3.png`} alt="Logo" className="h-10" />
+              <img src={`${import.meta.env.BASE_URL}img/logo3.png`} alt="Logo" className="h-14" />
             </Link>
           </div>
 
           {/* Desktop Links */}
-          <ul className="hidden md:flex space-x-6 font-medium text-sm text-black">
+          <ul className="hidden md:flex space-x-6 font-semibold text-md text-black">
             {["Home", "Products", "Services", "About", "Contact Us"].map((item, index) => (
               <li key={index}>
                 <Link

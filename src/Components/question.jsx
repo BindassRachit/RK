@@ -3,36 +3,34 @@ import GoogleForm from './googleForm';
 
 const faqData = [
   {
-    question: "How does the password generator work?",
-    answer: `The LastPass password generator creates random passwords based on parameters set by you.
-Parameters include password length, whether the password should be easy to say or read,
-and whether the password should have uppercase letters, lowercase letters, numbers, and symbols.
-The password is then checked using the zxcvbn library to measure its strength.`
+    question: "What types of products do you provide maintenance for?",
+    answer: `We provide complete maintenance and servicing for all our products including Centrifugal Blowers, Dust Collectors, Air Diffusers, Grills, Dampers, and more.
+Our trained technicians ensure timely servicing, part replacement, and performance optimization for all equipment.`
   },
   {
-    question: "Can a strong password be hacked?",
-    answer: `Technically yes, but it would take thousands of years to crack a well-formed 12-character password
-with numbers, symbols, and letters. So it’s practically unhackable in your lifetime.`
+    question: "Do you offer on-site inspection and service support?",
+    answer: `Yes, we provide on-site inspection and servicing for industrial and commercial sites.
+Our technicians can visit your location, inspect the equipment, and suggest the right maintenance or repair actions.`
   },
   {
-    question: "Can I use the password generator to create a user name?",
-    answer: `No, you should use the dedicated LastPass username generator for that purpose.
-It gives you random, unique usernames using letters only.`
+    question: "Can I schedule periodic maintenance for installed products?",
+    answer: `Absolutely. We offer AMC (Annual Maintenance Contracts) and scheduled service plans to ensure your systems run efficiently throughout the year.
+This reduces downtime and increases the lifespan of your equipment.`
   },
   {
-    question: "How do you manage your passwords with a password manager?",
-    answer: `Saved passwords go into your encrypted password vault.
-You can access, search, autofill, and manage your credentials via the LastPass extension or mobile app.`
+    question: "How can I request a maintenance visit or support?",
+    answer: `You can fill out the service request form provided on our website or contact us directly via phone or email.
+Once received, our support team will get in touch within 24 hours to confirm the visit and details.`
   },
   {
-    question: "Is LastPass password generator safe?",
-    answer: `Yes. It generates strong, random passwords using secure logic and checks them with the zxcvbn library.
-Saved passwords are encrypted and only visible to you.`
+    question: "What safety standards do your products and services follow?",
+    answer: `All our products are manufactured under strict industrial safety and quality standards.
+Our service team follows proper safety protocols while handling, installing, and maintaining equipment.`
   },
   {
-    question: "Is the functionality different in the online generator and in the app?",
-    answer: `No, both are the same. The only difference is the app can autofill and save the password directly.
-With the online tool, you need to copy-paste manually.`
+    question: "Can I get customized ventilation solutions for my industry?",
+    answer: `Yes, we specialize in customized air handling and ventilation systems as per your space, load, and environment.
+From design to installation and servicing, we offer end-to-end tailored solutions.`
   }
 ];
 

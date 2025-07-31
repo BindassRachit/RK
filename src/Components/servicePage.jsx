@@ -1,7 +1,18 @@
-// About.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./footor";
 import Navbar from "./navbar";
+import { motion } from "framer-motion";
+
+// Animation Variants
+const leftImageVariants = {
+  hidden: { x: -100, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+};
+
+const rightImageVariants = {
+  hidden: { x: 100, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+};
 
 const ServicePage = () => {
   return (
@@ -26,21 +37,17 @@ const ServicePage = () => {
         {/* Company description paragraph */}
         <div className="max-w-6xl mx-auto px-6 pb-12">
           <p className="text-lg leading-relaxed text-justify">
-            Established in the year 2011 in Faridabad (Haryana, India), “RK AIR
-            SYSTEM” is amongst the leading Manufacturers and Exporters of a wide
-            variety of air pollution control systems and equipment’s. Our
-            product range includes Industrial Fans, Centrifugal Blowers, Dust
-            Collectors, Cyclone dust collector, High Pressure Fans, Ventilation
-            Systems, Air Cooling System, Air Washer System, Fume Extraction
-            System, Industrial Scrubbers, Bag Filters, Industrial Fans, Tunnel
-            Fans, Jet Fans, fabrication works and M.S Ducting etc.
+            Established in the year 2023 in Badarpur, New Delhi (South East Delhi), 110044, “RK AIR SYSTEM” is amongst the leading Manufacturers and Exporters of a wide variety of air pollution control systems and equipment. Our product range includes Industrial Fans, Centrifugal Blowers, Dust Collectors, Cyclone Dust Collectors, High Pressure Fans, Ventilation Systems, Air Cooling Systems, Air Washer Systems, Fume Extraction Systems, Industrial Scrubbers, Bag Filters, Tunnel Fans, Jet Fans, Fabrication Works, and M.S. Ducting etc.
           </p>
         </div>
 
-
         {/* Left Image - Right Text */}
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 px-6 pb-12">
-          <img
+          <motion.img
+            variants={leftImageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
             src={`${import.meta.env.BASE_URL}img/Service-1.png`}
             alt="Manufacturing"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
@@ -57,7 +64,11 @@ const ServicePage = () => {
 
         {/* Right Image - Left Text */}
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-6 px-6 pb-12">
-          <img
+          <motion.img
+            variants={rightImageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
             src={`${import.meta.env.BASE_URL}img/Service-3.png`}
             alt="Clients"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
@@ -71,11 +82,14 @@ const ServicePage = () => {
             </p>
           </div>
         </div>
-      </div>
 
-      {/* Left Image - Right Text */}
+        {/* Left Image - Right Text */}
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 px-6 pb-12">
-          <img
+          <motion.img
+            variants={leftImageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
             src={`${import.meta.env.BASE_URL}img/Service-4.png`}
             alt="Manufacturing"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
@@ -85,14 +99,18 @@ const ServicePage = () => {
               On-Demand <span className="text-orange-600">Repair & Emergency </span> Support
             </h2>
             <p className="text-base leading-relaxed text-justify">
-             Facing a sudden breakdown? Our on-demand repair and emergency support team is available to respond swiftly to your needs. From blower motor failures to filter clogging, we resolve all product issues promptly. Our engineers diagnose and restore functionality on-site, reducing your downtime and ensuring business continuity.
+              Facing a sudden breakdown? Our on-demand repair and emergency support team is available to respond swiftly to your needs. From blower motor failures to filter clogging, we resolve all product issues promptly. Our engineers diagnose and restore functionality on-site, reducing your downtime and ensuring business continuity.
             </p>
           </div>
         </div>
 
         {/* Right Image - Left Text */}
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-6 px-6 pb-12">
-          <img
+          <motion.img
+            variants={rightImageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
             src={`${import.meta.env.BASE_URL}img/Service-2.png`}
             alt="Clients"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
@@ -106,7 +124,7 @@ const ServicePage = () => {
             </p>
           </div>
         </div>
-
+      </div>
 
       <Footer />
     </>

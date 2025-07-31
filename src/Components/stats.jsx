@@ -4,10 +4,10 @@ import { useInView } from "react-intersection-observer";
 import { FaPlus } from "react-icons/fa";
 
 const stats = [
-  { label: "Projects", value: 120 },
-  { label: "Clients", value: 45 },
-  { label: "Awards", value: 15 },
-  { label: "Cups of Coffee", value: 999 },
+  { label: "Projects", value: 1200 },
+  { label: "Clients", value: 4500 },
+  { label: "Awards", value: 750 },
+  { label: "Cups of Coffee", value: 9999 },
 ];
 
 const StatsSection = () => {

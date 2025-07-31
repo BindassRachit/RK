@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const services = [
   {
@@ -19,24 +20,40 @@ const services = [
   {
     name: 'Duct Cleaning',
     desc: 'Deep cleaning for ventilation systems.',
-    img: 'img/Service-4.png', // Make sure you have this image
+    img: 'img/Service-4.png',
   },
 ];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.6,
+      type: 'spring',
+    },
+  }),
+};
 
 const ServiceSection = () => {
   return (
     <section className="py-16 px-4 bg-white">
-      {/* Heading */}
       <h2 className="text-3xl font-semibold text-center text-gray-800 mb-10">
         Our <span className="text-[#ff9721]">Services</span>
       </h2>
 
-      {/* Service Cards */}
       <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-4 sm:grid-cols-2 grid-cols-1">
         {services.map((service, index) => (
-          <div
+          <motion.div
             key={index}
             className="bg-[#f9f9f9] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+            custom={index}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={cardVariants}
           >
             <img
               src={service.img}
@@ -47,10 +64,9 @@ const ServiceSection = () => {
               <h3 className="text-lg font-semibold text-gray-800 mb-1">{service.name}</h3>
               <p className="text-sm text-gray-600">{service.desc}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-
     </section>
   );
 };

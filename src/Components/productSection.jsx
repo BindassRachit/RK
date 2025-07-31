@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import products from '../data/product';
 
 const ProductSection = () => {
@@ -13,21 +14,28 @@ const ProductSection = () => {
       {/* Product Cards Grid */}
       <div className="max-w-7xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {products.slice(0, 8).map((product, index) => (
-          <Link
+          <motion.div
             key={index}
-            to={`/product/${product.id}`}
-            className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 block"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: index * 0.1, type: "spring" }}
           >
-            <img
-              src={product.images?.[0]}
-              alt={product.name}
-              className="w-full h-72 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">{product.name}</h3>
-              <p className="text-sm text-gray-500">{product.description}</p>
-            </div>
-          </Link>
+            <Link
+              to={`/product/${product.id}`}
+              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 block"
+            >
+              <img
+                src={product.images?.[0]}
+                alt={product.name}
+                className="w-full h-72 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-800 mb-1">{product.name}</h3>
+                <p className="text-sm text-gray-500">{product.description}</p>
+              </div>
+            </Link>
+          </motion.div>
         ))}
       </div>
 
