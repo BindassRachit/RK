@@ -22,7 +22,7 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <ul className="hidden md:flex space-x-6 font-medium text-sm text-black">
-            {["Home", "Services", "Products", "About", "Contact Us"].map((item, index) => (
+            {["Home", "Products", "Services", "About", "Contact Us"].map((item, index) => (
               <li key={index}>
                 <Link
                   to={

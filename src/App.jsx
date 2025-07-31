@@ -10,9 +10,10 @@ import FAQSection from './Components/question';
 import LocationMap from './Components/contact';
 import AllProducts from './Components/allProducts';
 import Footer from './Components/footor';
-import ProductDetail from './Components/productdetail'; // make sure spelling is correct
+import ProductDetail from './Components/productdetail'; 
 import About from './Components/about';
 import ContactPage from './Components/contactUs';
+import ServicePage from './Components/servicePage';
 
 // Home page layout inside function
 const HomePage = () => {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<AllProducts />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<ServicePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>

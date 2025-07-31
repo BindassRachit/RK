@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import GoogleForm from './googleForm';
 
 const faqData = [
   {
@@ -36,23 +37,41 @@ With the online tool, you need to copy-paste manually.`
 ];
 
 const FAQSection = () => {
-  return (
-    <div id="details" className="max-w-4xl mx-auto px-4 py-10">
-      <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+  const [openIndex, setOpenIndex] = useState(null);
 
-      {faqData.map((faq, index) => (
-        <details key={index} className="group border-b border-gray-300 py-4">
-          <summary className="cursor-pointer flex justify-between items-center text-lg font-medium text-gray-800">
-            <span>{faq.question}</span>
-            {/* + icon (default), − icon when open */}
-            <span className="text-2xl font-bold transition-transform group-open:rotate-0">
-              <span className="group-open:hidden">+</span>
-              <span className="hidden group-open:inline">−</span>
-            </span>
-          </summary>
-          <p className="mt-2 text-gray-600 whitespace-pre-line">{faq.answer}</p>
-        </details>
-      ))}
+  const toggleFAQ = (index) => {
+    setOpenIndex(prevIndex => prevIndex === index ? null : index);
+  };
+
+  return (
+    <div id="details" className="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-8">
+      
+      {/* Left: FAQ Section */}
+      <div className="w-full md:w-1/2">
+        <h2 className="text-3xl font-bold mb-8 text-center md:text-left">Frequently Asked Questions</h2>
+
+        {faqData.map((faq, index) => (
+          <div key={index} className="border-b border-gray-300 py-4">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full text-left flex justify-between items-center text-lg font-medium text-gray-800 focus:outline-none"
+            >
+              <span>{faq.question}</span>
+              <span className="text-2xl font-bold">
+                {openIndex === index ? '−' : '+'}
+              </span>
+            </button>
+            {openIndex === index && (
+              <p className="mt-2 text-gray-600 whitespace-pre-line">{faq.answer}</p>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Right: Google Form Embed */}
+      <div className="w-full md:w-1/2">
+        <GoogleForm />
+      </div>
     </div>
   );
 };

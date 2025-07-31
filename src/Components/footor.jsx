@@ -40,7 +40,6 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li>Our story</li>
             <li>Blog</li>
-            <li>Problems</li>
           </ul>
         </div>
 
@@ -60,7 +59,7 @@ const Footer = () => {
 
       {/* Popular Categories */}
       <div className="text-xs text-gray-700 max-w-7xl mx-auto px-6 py-6 border-b border-gray-300 leading-relaxed">
-        <span className="font-semibold text-green-700">Popular Categories</span> | Kanchipuram Silk Sarees | Threadwork Silk Sarees | Borderless Silk Sarees | Korvai Sarees | Fancy Kanjivaram Silk Sarees | Silver Zari Silk Sarees | Traditional Sarees | Bridal Sarees | Banarasi Silk Sarees | Mysore Silk Sarees | Handloom Silk Sarees | Tussar Silk | Mens Wear | and more...
+        <span className="font-semibold text-green-700">Popular Categories</span> | Double Deflection Louver Grill | Automatic Pulse Jet Dust Collector | Square Ceiling Diffuser | Motorized Damper | Bag House Filter | DIDW BLOWER | SISW BLOWER | LIMIT LOAD BLOWER | SPARES IMPELLER | High Pressure Blower | Duct Axial Flow Fans | Tube Axial Fans | Vane Axial Fans | and more...
       </div>
 
       {/* Bottom bar */}
