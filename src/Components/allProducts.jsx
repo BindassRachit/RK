@@ -1,14 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import products from "../data/product";
-import Navbar from './navbar';
-import Footer from './footor';
 import { motion } from 'framer-motion';
 
 const AllProducts = () => {
   return (
     <>
-      <Navbar />
       <div className="pt-24 px-4 max-w-7xl mx-auto pb-12">
         {/* Heading with two-color */}
         <h2 className="text-4xl font-bold text-center mb-12">
@@ -51,7 +48,6 @@ const AllProducts = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 };

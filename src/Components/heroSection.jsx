@@ -62,13 +62,13 @@ const HeroSection = () => {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white  backdrop-blur-sm px-4">
           <TypeAnimation
             sequence={[
-              'Welcome to Our Site',
+              'Welcome to Our Website',
               1000,
               '',
-              'Discover the best deals',
+              'Excellence in Every Creation',
               1000,
               '',
-              'Shop Latest Products',
+              'Engineering the Future',
               1000,
               ''
             ]}
@@ -77,7 +77,7 @@ const HeroSection = () => {
             repeat={Infinity}
             className="text-3xl md:text-5xl font-bold mb-4 text-white"
           />
-          <p className="text-lg md:text-2xl mb-6 text-black">Your shopping journey starts here</p>
+          <p className="text-lg md:text-2xl mb-6 text-black">Leading the way in smart manufacturing and global impact.</p>
         </div>
       </div>
 

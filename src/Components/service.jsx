@@ -13,8 +13,8 @@ const services = [
     img: 'img/Service-2.png',
   },
   {
-    name: 'Filter Replacement',
-    desc: 'Timely air filter replacement services.',
+    name: 'System Upgrades',
+    desc: 'We upgrade old systems for better performance and compliance.',
     img: 'img/Service-3.png',
   },
   {

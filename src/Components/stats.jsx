@@ -5,9 +5,9 @@ import { FaPlus } from "react-icons/fa";
 
 const stats = [
   { label: "Projects", value: 1200 },
-  { label: "Clients", value: 4500 },
+  { label: "Clients", value: 2500 },
   { label: "Awards", value: 750 },
-  { label: "Cups of Coffee", value: 9999 },
+  { label: "Years of Experience", value: 10 },
 ];
 
 const StatsSection = () => {
@@ -19,7 +19,7 @@ const StatsSection = () => {
       className="relative w-full text-white py-28 px-4 flex items-center justify-center
                  bg-fixed bg-center bg-cover"
       style={{
-        backgroundImage: `url('https://www.goodwalldecals.com/820/world-map-6.jpg')`, // Replace with your image
+        backgroundImage: `url(${import.meta.env.BASE_URL}img/stats.jpg)`,
       }}
     >
       {/* Blackish-orange overlay */}

@@ -1,8 +1,6 @@
 import React from "react";
-import Navbar from "./navbar";
 import GoogleForm from "./googleForm";
 import LocationMap from "./contact";
-import Footer from "./footor";
 
 /**
  * ContactPage
@@ -20,7 +18,6 @@ import Footer from "./footor";
 const ContactPage = () => {
   return (
     <>
-    <Navbar />
     <section className="pt-24 pb-16 px-4 bg-[#f9f9f9]">
       {/* Heading */}
       <h2 className="text-4xl font-bold text-center mb-10">
@@ -36,7 +33,7 @@ const ContactPage = () => {
           </h3>
 
           <p className="text-gray-600 leading-relaxed mb-6">
-            Established in the year 2023 in Badarpur, New Delhi (South East Delhi), 110044, “RK AIR SYSTEM” is amongst the leading Manufacturers and Exporters of a wide variety of air pollution control systems and equipment. Our product range includes Industrial Fans, Centrifugal Blowers, Dust Collectors, Cyclone Dust Collectors, High Pressure Fans, Ventilation Systems, Air Cooling Systems, Air Washer Systems, Fume Extraction Systems, Industrial Scrubbers, Bag Filters, Tunnel Fans, Jet Fans, Fabrication Works, and M.S. Ducting etc.
+            Established in the year 2016 in Badarpur, New Delhi (South East Delhi), 110044, “RK AIR SYSTEM” is amongst the leading Manufacturers and Exporters of a wide variety of air pollution control systems and equipment. Our product range includes Industrial Fans, Centrifugal Blowers, Dust Collectors, Cyclone Dust Collectors, High Pressure Fans, Ventilation Systems, Air Cooling Systems, Air Washer Systems, Fume Extraction Systems, Industrial Scrubbers, Bag Filters, Tunnel Fans, Jet Fans, Fabrication Works, and M.S. Ducting etc.
           </p>
 
           <div className="space-y-4">
@@ -68,7 +65,7 @@ const ContactPage = () => {
                 rel="noreferrer"
                 className="text-lg font-medium text-gray-900 hover:text-[#ff9721]"
               >
-                Faridabad, Haryana, India
+                OFF. Add - TOP FLOOR | D-1083-A, L/S, Bala Ji Mandi Road - Real View Public School - Jaitpur Extension Part 2, | BADARPUR, New Delhi, South East Delhi, 110044
               </a>
             </div>
 
@@ -86,7 +83,6 @@ const ContactPage = () => {
        </div>
     </section>
     <LocationMap />
-    <Footer />
     </>
   );
 };

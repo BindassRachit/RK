@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "./footor";
-import Navbar from "./navbar";
 import { motion } from "framer-motion";
 
 // Variants for animations
@@ -22,8 +20,6 @@ const iconVariants = {
 const About = () => {
   return (
     <>
-      <Navbar />
-
       <div className="w-full bg-white text-black">
         {/* Top full-width image */}
         <img
@@ -42,7 +38,7 @@ const About = () => {
         {/* Company description paragraph */}
         <div className="max-w-6xl mx-auto px-6 pb-12">
           <p className="text-lg leading-relaxed text-justify">
-            Established in the year 2023 in Badarpur, New Delhi (South East Delhi), 110044, “RK AIR SYSTEM” is amongst the leading Manufacturers and Exporters of a wide variety of air pollution control systems and equipment. Our product range includes Industrial Fans, Centrifugal Blowers, Dust Collectors, Cyclone Dust Collectors, High Pressure Fans, Ventilation Systems, Air Cooling Systems, Air Washer Systems, Fume Extraction Systems, Industrial Scrubbers, Bag Filters, Tunnel Fans, Jet Fans, Fabrication Works, and M.S. Ducting etc.
+            Established in the year 2016 in Badarpur, New Delhi (South East Delhi), 110044, “RK AIR SYSTEM” is amongst the leading Manufacturers and Exporters of a wide variety of air pollution control systems and equipment. Our product range includes Industrial Fans, Centrifugal Blowers, Dust Collectors, Cyclone Dust Collectors, High Pressure Fans, Ventilation Systems, Air Cooling Systems, Air Washer Systems, Fume Extraction Systems, Industrial Scrubbers, Bag Filters, Tunnel Fans, Jet Fans, Fabrication Works, and M.S. Ducting etc.
           </p>
         </div>
 
@@ -190,19 +186,14 @@ const About = () => {
           />
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-2">
-              <span className="text-orange-600">Our Clients</span> & Vision
+              <span className="text-orange-600">Future </span>Vision
             </h2>
             <p className="text-base leading-relaxed text-justify">
-              Our major clients include CNH India Pvt Ltd, J.K Tyre, Goodyear
-              Tyre, Suzuki Motor Cycle, and JCB. We aim to deliver high-quality,
-              cost-effective solutions for industries worldwide with our
-              commitment to innovation and customer satisfaction.
+              As a forward-thinking manufacturing company, we are committed to expanding our reach across global markets. With a passion for excellence and continuous innovation, our vision is to become a recognized industry leader known for delivering reliable, high-quality solutions that shape the future of manufacturing.
             </p>
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

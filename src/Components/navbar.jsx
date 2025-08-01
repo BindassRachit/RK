@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="w-full bg-transparent shadow-none fixed top-0 left-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
           <div>
             <Link to="/">

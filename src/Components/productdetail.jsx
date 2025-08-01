@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../data/product';
-import Navbar from './navbar';
-import Footer from './footor';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -13,7 +11,6 @@ const ProductDetail = () => {
 
   return (
     <>
-      <Navbar />
       <div className="max-w-7xl mx-auto pt-24 px-4 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* LEFT SIDE IMAGES */}
@@ -57,7 +54,6 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
