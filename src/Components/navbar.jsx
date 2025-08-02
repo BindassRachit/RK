@@ -15,8 +15,11 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
           <div>
-            <Link to="/">
+            <Link to="/" className='flex items-center space-x-2'>
               <img src={`${import.meta.env.BASE_URL}img/logo3.png`} alt="Logo" className="h-14" />
+              <span className="text-2xl font-bold text-black">
+                RK <span className="text-orange-500">Air</span> System
+              </span>
             </Link>
           </div>
 
