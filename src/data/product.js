@@ -610,6 +610,74 @@ const products = [
       "img/Industrial-Hot-AirSystem-2.jpg",
     ],
   },
+   {
+    id: 25,
+    name: "Flat Oval Duct",
+    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
+      Paragraph: [
+      {
+        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
+      },
+      {
+        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
+      }
+    ],
+    points: [
+      "Tough construction",
+      "Durable standards",
+      "User-friendly operations"
+    ],
+    images: [
+      "img/Flat Oval Duct.jpg",
+      "img/Flat Oval Duct-2.jpg",
+    ],
+  },
+   {
+    id: 26,
+    name: "Round Duct",
+    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
+      Paragraph: [
+      {
+        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
+      },
+      {
+        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
+      }
+    ],
+    points: [
+      "Tough construction",
+      "Durable standards",
+      "User-friendly operations"
+    ],
+    images: [
+      "img/Round Duct-1.png",
+      "img/Round Duct-2.png",
+      "img/Round Duct-3.jpg",
+    ],
+  },
+   {
+    id: 27,
+    name: "Rectangular Duct",
+    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
+      Paragraph: [
+      {
+        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
+      },
+      {
+        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
+      }
+    ],
+    points: [
+      "Tough construction",
+      "Durable standards",
+      "User-friendly operations"
+    ],
+    images: [
+      "img/Rectangular Duct.jpg",
+      "img/Rectangular Duct-2.jpg",
+      "img/Rectangular Duct-3.jpg",
+    ],
+  },
 ];
 
 export default products;
