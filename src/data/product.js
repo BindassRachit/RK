@@ -1,5 +1,212 @@
 const products = [
   {
+    id: 25,
+    name: "Flat Oval Duct",
+    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
+      Paragraph: [
+      {
+        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
+      },
+      {
+        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
+      }
+    ],
+    points: [
+      "Tough construction",
+      "Durable standards",
+      "User-friendly operations"
+    ],
+    images: [
+      "img/Flat Oval Duct.jpg",
+      "img/Flat Oval Duct-2.jpg",
+    ],
+  },
+   {
+    id: 26,
+    name: "Round Duct",
+    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
+      Paragraph: [
+      {
+        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
+      },
+      {
+        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
+      }
+    ],
+    points: [
+      "Tough construction",
+      "Durable standards",
+      "User-friendly operations"
+    ],
+    images: [
+      "img/Round Duct-1.png",
+      "img/Round Duct-2.png",
+      "img/Round Duct-3.jpg",
+    ],
+  },
+   {
+    id: 27,
+    name: "Rectangular Duct",
+    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
+      Paragraph: [
+      {
+        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
+      },
+      {
+        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
+      }
+    ],
+    points: [
+      "Tough construction",
+      "Durable standards",
+      "User-friendly operations"
+    ],
+    images: [
+      "img/Rectangular Duct.jpg",
+      "img/Rectangular Duct-2.jpg",
+      "img/Rectangular Duct-3.jpg",
+    ],
+  },
+  {
+    id: 24,
+    name: "Hot Air Blower",
+    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
+      Paragraph: [
+      {
+        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
+      },
+      {
+        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
+      }
+    ],
+    points: [
+      "Tough construction",
+      "Durable standards",
+      "User-friendly operations"
+    ],
+    images: [
+      "img/Industrial-Hot-AirSystem-1.jpg",
+      "img/Industrial-Hot-AirSystem-2.jpg",
+    ],
+  },
+  {
+    id: 8,
+    name: "DIDW BLOWER",
+    description: "DIDW Centrifugal Fans are fans that are double the width of a conventional fan, they are essentially 2 fan sets back to back with the adjoining case wall removed.",
+      Paragraph: [
+      {
+        text: "DIDW Centrifugal Fans are fans that are double the width of a conventional fan, they are essentially 2 fan sets back to back with the adjoining case wall removed. This has the advantage of a smaller overall footprint and only one motor is required."
+      },
+      {
+        text: "The performance is quite simple: a DIDW Fan gives the same pressure rise but double the flow of a single inlet single width (SISW) fan."
+      },
+      {
+        text: "DIDW fans are conventionally used in heating and ventilation however Halifax Fan uses the DIDW’s generic design; couple it with our build quality and offer heavy duty industrial versions. These can be used in many applications where a large volume of air is required against a low to medium pressure."
+      }
+    ],
+    points: [
+      "Carbon or stainless steel construction",
+      "Suitable for clean air or moderate dust/ash where design permits",
+      "Backward curved or straight impeller blades",
+      "Handles temperatures above 100°C where design allows",
+      "Available in direct drive or belt drive configurations",
+      "Various handings and orientations available",
+      "Supports open inlets or inlet boxes",
+      "ATEX compliant",
+      "Controllable via damper or VSD",
+    ],
+    images: [
+      "img/DIDW-BLOWER.jpg",
+      "img/DIDW-BLOWER-2.jpg"
+    ],
+
+  },
+
+  {
+    id: 9,
+    name: "SISW BLOWER",
+    description: "SISW Fans will have one impeller and sucks gases axially and releases tangentially.",
+      Paragraph: [
+      {
+        text: "SISW Fans will have one impeller and sucks gases axially and releases tangentially. DIDW fans will have two impellers mounted in double size housing to deliver two times capacity. DIDW fans are suitable in many ventilation systems to adults the space requirements. According to service conditions fan parts are made in mild steel, stainless steel, aluminum and FRP materials"
+      }
+    ],
+    points: [
+      "High tensile strength",
+      "Solid construction",
+      "Dimensional Accuracy"
+    ],
+    images: [
+      "img/SISW-Blower-1.png",
+      "img/SISW-Blower-2.jpg"
+    ],
+
+  },
+  {
+    id: 10,
+    name: "LIMIT LOAD BLOWER",
+    description: "We manufacture a durable range of Limit Load Blowers. These are used in various industrial applications.",
+      Paragraph: [
+      {
+        text: "We manufacture a durable range of Limit Load Blowers. These are used in various industrial applications. We also provide customized solution to our clients as per their requirement. In double inlet double width design with backward tip bladed impellers for low pressure applications. To ensure optimum performance and resistance to corrosion, we design these blowers."
+      }
+    ],
+    points: [   
+      "Body: Material	Steel",
+      "Blower Type	Centrifugal Blower",
+      "Power: Source	Electric Blower",
+      "Pressure:	Low Pressure, Medium Pressure",
+      "Blower Type:	Centrifugal Blower",
+      "Surface Treatment:	Galvanized",
+      "Impeller:	Dia 410mm to 2700mm",
+      "Air Capacity:	3000 m3/hr to 270,000 m3/hr",
+      "Static Pressure:	20mm to 100mmWG",
+      "Construction:	M.S. / SS"
+    ],
+    images: [
+      "img/Limit-Load-Blower-1.jpg",
+      "img/Limit-Load-Blower-2.jpg",
+    ],
+
+  },
+  {
+    id: 12,
+    name: "High Pressure Blower",
+    description: "FD fan supplies air to the Air-preheater, where it captures the heat from the flue gases coming from the Boiler Outlet.",
+      Paragraph: [
+      {
+        text: "Forced Draft Fan ( Full form of FD Fan) is a type of a fan supplying pressurized air to a system. In the case of a Steam Boiler Assembly, this FD fan is of a great importance."
+      },
+      {
+        text: "FD fan supplies air to the Air-preheater, where it captures the heat from the flue gases coming from the Boiler Outlet."
+      },
+      {
+        text: "Whether it is Bubbling or Circulating fluidized bed combustion incorporated Boiler. This phenomenon of fluidization is achieved through a Forced Draft Fan only."
+      },
+      {
+        text: "Nowadays, fluidized bed combustion is one of the promising ways of collecting more energy through combustion for solid fuels. But this wouldn’t have even been so famous if there wasn’t any Forced Draft Fan."
+      },
+      {
+        text: "Let us consider Bubbling Fluidized Combustion, Proper designing of the Fan as per the weight of the sand placed on the bed is very essential."
+      },
+      {
+        text: "The pressurized air supplied by the Fan helps in providing enough draft equalizing the weight of the bed and the quantity to be supplied, hence creating fluidization of the sand in the furnace."
+      }
+    ],
+    points: [
+      "Type: Duct Mounted Fan",
+      "Usage/Application: Industrial, Domestic",
+      "Body Material: MS",
+      "Surface Finishing: Powder Coated"
+    ],
+    images: [
+      "img/High-Pressure-Blower-1.jpg",
+      "img/High-Pressure-Blower-2.jpg",
+      "img/High-Pressure-Blower-3.jpg"
+    ],
+
+  },
+  {
     id: 1,
     name: "Double Deflection louver Grill",
     description: "A Double Deflection Louver Grill is a type of air distribution grill...",
@@ -183,87 +390,6 @@ const products = [
     ],
 
   },
-
-  {
-    id: 8,
-    name: "DIDW BLOWER",
-    description: "DIDW Centrifugal Fans are fans that are double the width of a conventional fan, they are essentially 2 fan sets back to back with the adjoining case wall removed.",
-      Paragraph: [
-      {
-        text: "DIDW Centrifugal Fans are fans that are double the width of a conventional fan, they are essentially 2 fan sets back to back with the adjoining case wall removed. This has the advantage of a smaller overall footprint and only one motor is required."
-      },
-      {
-        text: "The performance is quite simple: a DIDW Fan gives the same pressure rise but double the flow of a single inlet single width (SISW) fan."
-      },
-      {
-        text: "DIDW fans are conventionally used in heating and ventilation however Halifax Fan uses the DIDW’s generic design; couple it with our build quality and offer heavy duty industrial versions. These can be used in many applications where a large volume of air is required against a low to medium pressure."
-      }
-    ],
-    points: [
-      "Carbon or stainless steel construction",
-      "Suitable for clean air or moderate dust/ash where design permits",
-      "Backward curved or straight impeller blades",
-      "Handles temperatures above 100°C where design allows",
-      "Available in direct drive or belt drive configurations",
-      "Various handings and orientations available",
-      "Supports open inlets or inlet boxes",
-      "ATEX compliant",
-      "Controllable via damper or VSD",
-    ],
-    images: [
-      "img/DIDW-BLOWER.jpg",
-      "img/DIDW-BLOWER-2.jpg"
-    ],
-
-  },
-
-  {
-    id: 9,
-    name: "SISW BLOWER",
-    description: "SISW Fans will have one impeller and sucks gases axially and releases tangentially.",
-      Paragraph: [
-      {
-        text: "SISW Fans will have one impeller and sucks gases axially and releases tangentially. DIDW fans will have two impellers mounted in double size housing to deliver two times capacity. DIDW fans are suitable in many ventilation systems to adults the space requirements. According to service conditions fan parts are made in mild steel, stainless steel, aluminum and FRP materials"
-      }
-    ],
-    points: [
-      "High tensile strength",
-      "Solid construction",
-      "Dimensional Accuracy"
-    ],
-    images: [
-      "img/SISW-Blower-1.png",
-      "img/SISW-Blower-2.jpg"
-    ],
-
-  },
-  {
-    id: 10,
-    name: "LIMIT LOAD BLOWER",
-    description: "We manufacture a durable range of Limit Load Blowers. These are used in various industrial applications.",
-      Paragraph: [
-      {
-        text: "We manufacture a durable range of Limit Load Blowers. These are used in various industrial applications. We also provide customized solution to our clients as per their requirement. In double inlet double width design with backward tip bladed impellers for low pressure applications. To ensure optimum performance and resistance to corrosion, we design these blowers."
-      }
-    ],
-    points: [   
-      "Body: Material	Steel",
-      "Blower Type	Centrifugal Blower",
-      "Power: Source	Electric Blower",
-      "Pressure:	Low Pressure, Medium Pressure",
-      "Blower Type:	Centrifugal Blower",
-      "Surface Treatment:	Galvanized",
-      "Impeller:	Dia 410mm to 2700mm",
-      "Air Capacity:	3000 m3/hr to 270,000 m3/hr",
-      "Static Pressure:	20mm to 100mmWG",
-      "Construction:	M.S. / SS"
-    ],
-    images: [
-      "img/Limit-Load-Blower-1.jpg",
-      "img/Limit-Load-Blower-2.jpg",
-    ],
-
-  },
   {
     id: 11,
     name: "SPARES IMPELLER",
@@ -287,43 +413,6 @@ const products = [
       "img/SPARES-IMPELLER-2.jpg",
       "img/SPARES-IMPELLER-3.jpg",
       "img/SPARES-IMPELLER-4.jpg",
-    ],
-
-  },
-  {
-    id: 12,
-    name: "High Pressure Blower",
-    description: "FD fan supplies air to the Air-preheater, where it captures the heat from the flue gases coming from the Boiler Outlet.",
-      Paragraph: [
-      {
-        text: "Forced Draft Fan ( Full form of FD Fan) is a type of a fan supplying pressurized air to a system. In the case of a Steam Boiler Assembly, this FD fan is of a great importance."
-      },
-      {
-        text: "FD fan supplies air to the Air-preheater, where it captures the heat from the flue gases coming from the Boiler Outlet."
-      },
-      {
-        text: "Whether it is Bubbling or Circulating fluidized bed combustion incorporated Boiler. This phenomenon of fluidization is achieved through a Forced Draft Fan only."
-      },
-      {
-        text: "Nowadays, fluidized bed combustion is one of the promising ways of collecting more energy through combustion for solid fuels. But this wouldn’t have even been so famous if there wasn’t any Forced Draft Fan."
-      },
-      {
-        text: "Let us consider Bubbling Fluidized Combustion, Proper designing of the Fan as per the weight of the sand placed on the bed is very essential."
-      },
-      {
-        text: "The pressurized air supplied by the Fan helps in providing enough draft equalizing the weight of the bed and the quantity to be supplied, hence creating fluidization of the sand in the furnace."
-      }
-    ],
-    points: [
-      "Type: Duct Mounted Fan",
-      "Usage/Application: Industrial, Domestic",
-      "Body Material: MS",
-      "Surface Finishing: Powder Coated"
-    ],
-    images: [
-      "img/High-Pressure-Blower-1.jpg",
-      "img/High-Pressure-Blower-2.jpg",
-      "img/High-Pressure-Blower-3.jpg"
     ],
 
   },
@@ -588,96 +677,8 @@ const products = [
       "img/Fume-Extraction-System-3.jpg"
     ],
   },
-   {
-    id: 24,
-    name: "Hot Air Blower",
-    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
-      Paragraph: [
-      {
-        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
-      },
-      {
-        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
-      }
-    ],
-    points: [
-      "Tough construction",
-      "Durable standards",
-      "User-friendly operations"
-    ],
-    images: [
-      "img/Industrial-Hot-AirSystem-1.jpg",
-      "img/Industrial-Hot-AirSystem-2.jpg",
-    ],
-  },
-   {
-    id: 25,
-    name: "Flat Oval Duct",
-    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
-      Paragraph: [
-      {
-        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
-      },
-      {
-        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
-      }
-    ],
-    points: [
-      "Tough construction",
-      "Durable standards",
-      "User-friendly operations"
-    ],
-    images: [
-      "img/Flat Oval Duct.jpg",
-      "img/Flat Oval Duct-2.jpg",
-    ],
-  },
-   {
-    id: 26,
-    name: "Round Duct",
-    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
-      Paragraph: [
-      {
-        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
-      },
-      {
-        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
-      }
-    ],
-    points: [
-      "Tough construction",
-      "Durable standards",
-      "User-friendly operations"
-    ],
-    images: [
-      "img/Round Duct-1.png",
-      "img/Round Duct-2.png",
-      "img/Round Duct-3.jpg",
-    ],
-  },
-   {
-    id: 27,
-    name: "Rectangular Duct",
-    description: "The range of Hot Air Blowers is fabricated using high grade raw material and components...",
-      Paragraph: [
-      {
-        text: "The range of Hot Air Blowers is fabricated using high grade raw material and components. These products are widely used for silicone and platinum coatings in different industries. Robust construction of these blowers and their availability in various technical specifications have made these blowers a preferred choice of the customers."
-      },
-      {
-        text: "Compactly built and easy to integrate any industrial processes, these Hot Air Blowers are procured from some of the most dependable vendors in the domain. We are one of the most trusted Suppliers and Distributors of the Hot Air Blowers from Mumbai (Maharashtra). Our range of Hot Air Blowers consists of AH 302 Master Flow Hot Air Blower, AH 502 Master Flow Hot Air Blower and AH 752 Master Flow Hot Air Blower."
-      }
-    ],
-    points: [
-      "Tough construction",
-      "Durable standards",
-      "User-friendly operations"
-    ],
-    images: [
-      "img/Rectangular Duct.jpg",
-      "img/Rectangular Duct-2.jpg",
-      "img/Rectangular Duct-3.jpg",
-    ],
-  },
+   
+   
 ];
 
 export default products;
